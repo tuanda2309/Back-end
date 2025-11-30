@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pymongo
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+pydantic
+dnspython
+requests
+websockets
+typing_extensions
