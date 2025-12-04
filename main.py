@@ -14,6 +14,9 @@ from configs.websocket_manager import ConnectionManager
 from starlette.websockets import WebSocketDisconnect
 from configs.database import message_collection, user_collection
 
+if not os.path.exists('files'):
+    os.makedirs('files')
+
 app = FastAPI()
 
 app.include_router(UserRouter)
